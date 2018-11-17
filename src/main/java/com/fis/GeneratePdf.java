@@ -19,7 +19,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 /**
  * @author Akhil Garg Class to print PDF file
  */
-public class SamplePdf {
+public class GeneratePdf {
 	/** The resulting PDF file. */
 	static Date date = new Date();
 	static SimpleDateFormat simpleFormat = new SimpleDateFormat("dd-MM-YYYY_hhmmss");
@@ -82,7 +82,7 @@ public class SamplePdf {
 					}
 				}
 				if (lastNumber > startNumber) {
-					new SamplePdf().createPdf(sequence.trim(), startNumber, lastNumber, RESULT);
+					new GeneratePdf().createPdf(sequence.trim(), startNumber, lastNumber, RESULT);
 					System.out.println("");
 					System.out.println("		Pdf generated at location: " + RESULT);
 					System.out.println("");
@@ -140,7 +140,6 @@ public class SamplePdf {
 			cell.setHorizontalAlignment(Element.ALIGN_CENTER);
 			cell.setPhrase(phrase);
 			cell.setBorderWidth(1);
-			
 			table.addCell(cell);
 		}
 		return table;
