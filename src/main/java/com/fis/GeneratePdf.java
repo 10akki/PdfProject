@@ -26,7 +26,7 @@ public class GeneratePdf {
 	static String strDate = simpleFormat.format(date);
 	Calendar cal = Calendar.getInstance();
 	Date d = cal.getTime();
-	public static final String RESULT = "E:/Pdf_File_" + strDate + ".pdf";
+	public static final String RESULT = "E:/PdfFile_" + strDate + ".pdf";
 
 	/**
 	 * Main method.
