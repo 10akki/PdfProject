@@ -141,7 +141,11 @@ public class GeneratePdf {
 			cell.setPhrase(phrase);
 			cell.setBorderWidth(1);
 
+			
+			
 			table.addCell(cell);
+			
+			
 		}
 		return table;
 	}
