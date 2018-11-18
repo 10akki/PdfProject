@@ -142,6 +142,9 @@ public class GeneratePdf {
 			cell.setBorderWidth(1);
 			
 			table.addCell(cell);
+			
+			
+			
 		}
 		return table;
 	}
